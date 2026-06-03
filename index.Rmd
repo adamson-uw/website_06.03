@@ -146,7 +146,7 @@ Prior to academia, I worked as a director of economic modeling and research mana
 
 <h1>Research</h1>
 
-<p style="font-size: 12pt; letter-spacing: 1px; border-bottom: 1.5pt solid; line-height: 1; margin: 0; padding: .5pt;"></p>
+<p style="font-size: 10pt; letter-spacing: 1px; border-bottom: 1.5pt solid; line-height: 1; margin: 0; padding: .5pt;"></p>
 
 <div style="height: 6px;"></div>
 
