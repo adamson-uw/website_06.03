@@ -45,7 +45,7 @@ LEFT COLUMN
 ============================================================================= -->
 <div class="column-left">
 
-<img src="images/headshot_website.jpg" style="width: 90%" alt="Clayton Adamson headshot">
+<img src="images/headshot_website.JPG" style="width: 95%" alt="Clayton Adamson headshot">
 
 <p style="font-family: 'DM Mono'; font-size: 16pt; color: Black; letter-spacing: 1.5px; line-height: 2.5; margin: 0; padding: 1;">
 <strong>Clayton Adamson</strong>
