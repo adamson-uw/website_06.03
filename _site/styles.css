@@ -250,10 +250,9 @@ span b {
   /* Resize and center the headshot image */
   .column-left img {
     max-width: 250px;   /* adjust to taste: 200–300px works well */
-    width: 100%;
+    width: 90%;
     height: auto;
-    display: block;
-    margin: 0 auto;     /* centers the image */
+    display: block
   }
 
   /* Prevent horizontal scrolling on mobile */
