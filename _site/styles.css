@@ -229,4 +229,18 @@ span b {
   white-space: nowrap;
 }
 
+/* Mobile layout fix */
+@media (max-width: 768px) {
+  .column-left,
+  .column-center,
+  .column-right {
+    float: none !important;
+    width: 100% !important;
+  }
+
+  /* Optional: add spacing between stacked sections */
+  .column-left,
+  .column-right {
+    margin-bottom: 20px;
+  }
 
