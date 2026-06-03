@@ -231,6 +231,7 @@ span b {
 }
 
 /* Mobile layout fix */
+/* Mobile layout fix */
 @media (max-width: 768px) {
 
   /* Stack all three columns */
@@ -247,12 +248,11 @@ span b {
     margin-bottom: 20px;
   }
 
-  /* Resize and center the headshot image */
+  /* Resize the headshot image (NOT centered) */
   .column-left img {
-    max-width: 250px;   /* adjust to taste: 200–300px works well */
-    width: 90%;
+    max-width: 250px;   /* adjust to taste */
+    width: 100%;
     height: auto;
-    display: block
   }
 
   /* Prevent horizontal scrolling on mobile */
