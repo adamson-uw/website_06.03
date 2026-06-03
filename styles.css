@@ -2,7 +2,7 @@
 /*-------------------------------------------------- */
 
 @import url('https://fonts.googleapis.com/css?family=DM+Mono&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Inter&display=swap'); 
 
 /*-------------------------------------------------- */
@@ -23,6 +23,7 @@
   src: url("fonts/Inter-Italic.woff2") format("woff2"),
        url("fonts/Inter-Italic.woff") format("woff");
 }
+
 
 @font-face {
   font-family: 'Inter';
@@ -125,7 +126,7 @@ h3{
 }
 
 h4 {
-  font-family: 'Inter';
+  font-family: 'Outfit', sans-serif;
   font-size: 12pt;
   font-weight: 600;
   text-decoration: underline;
@@ -133,7 +134,7 @@ h4 {
 }
 
 h5{
-  font-family: 'DM Mono';
+  font-family: 'Outfit', sans-serif;
   font-size: 16pt;
   font-weight: 500;
   color: white;
@@ -141,10 +142,10 @@ h5{
 }
 
 body{
-  font-family: 'DM Mono';
+  font-family: 'Outfit', sans-serif;
   font-weight: 400;
-  font-size: 11pt;
-  background-color: #white;
+  font-size: 12pt;
+  background-color: #F7F6FA;
   color: #191919;
   margin: auto;
   max-width: 1225px
@@ -156,14 +157,14 @@ body .main-container {
 }
 
 span {
-  font-family: 'Inter';
+  font-family: 'Outfit', sans-serif;
   font-size: 32pt;
   font-weight: 700;
   color: #191919;
 }
 
 span b {
-  font-family: 'Inter';
+  font-family: 'Outfit', sans-serif;
   font-size: 19pt;
   font-weight: 500;
 }
@@ -231,6 +232,8 @@ span b {
 
 /* Mobile layout fix */
 @media (max-width: 768px) {
+
+  /* Stack all three columns */
   .column-left,
   .column-center,
   .column-right {
@@ -238,9 +241,23 @@ span b {
     width: 100% !important;
   }
 
-  /* Optional: add spacing between stacked sections */
+  /* Add spacing between sections */
   .column-left,
   .column-right {
     margin-bottom: 20px;
   }
 
+  /* Resize and center the headshot image */
+  .column-left img {
+    max-width: 250px;   /* adjust to taste: 200–300px works well */
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;     /* centers the image */
+  }
+
+  /* Prevent horizontal scrolling on mobile */
+  body {
+    overflow-x: hidden;
+  }
+}
