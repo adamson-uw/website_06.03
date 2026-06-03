@@ -186,3 +186,41 @@ span b {
   background-color: #cae4e8 !important;   /* darker blue */
   color: white !important;
 }
+
+/* Keep brand and CV on one line, remove weird underline/spacing */
+.navbar-default .navbar-brand {
+  font-family: 'DM Mono', monospace;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 0;
+  border: none;
+  text-decoration: none;
+}
+
+/* Remove any underline/border from the brand */
+.navbar-default .navbar-brand,
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  text-decoration: none;
+  border: none;
+  box-shadow: none;
+}
+
+/* CV tab styling + keep it on same line */
+.navbar-default .navbar-nav > li > a {
+  white-space: nowrap;          /* prevents wrapping to next line */
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* Optional: make the CV look like a button */
+.navbar-default .navbar-nav > li > a {
+  border-radius: 4px;
+  padding-left: 14px;
+  padding-right: 14px;
+}
+
