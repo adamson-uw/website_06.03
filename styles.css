@@ -143,16 +143,16 @@ h5{
 body{
   font-family: 'DM Mono';
   font-weight: 400;
-  font-size: 12pt;
+  font-size: 11pt;
   background-color: #white;
   color: #191919;
   margin: auto;
-  max-width: 1325px
+  max-width: 1425px
 }
 
 body .main-container {
-  max-width: 1325px;
-  width: 1325px;
+  max-width: 1425px;
+  width: 1425px;
 }
 
 span {

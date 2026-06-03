@@ -264,16 +264,16 @@ $(document).ready(function () {
 
 
 <!-- =============================================================================
-CUSTOM CSS FOR A SIMPLE 3-COLUMN LAYOUT
-- Left column: sidebar (photo/contact/links)
-- Center column: spacer
-- Right column: main content (bio + research)
-NOTE: Uses floats for left/right, with a spacer div in the middle.
+GLOBAL WRAPPER (stabilizes float layout)
+============================================================================= -->
+<div id="page-wrapper">
+<!-- =============================================================================
+CUSTOM CSS FOR 3-COLUMN LAYOUT
 ============================================================================= -->
 <style>
 .column-left{
   float: left;
-  width: 33%;
+  width: 30%;
   text-align: left;
 }
 .column-center{
@@ -283,181 +283,80 @@ NOTE: Uses floats for left/right, with a spacer div in the middle.
 }
 .column-right{
   float: right;
-  width: 63%;
+  width: 66%;
   text-align: left;
-
 }
 </style>
-<!-- A manual line break/spacing hack used in some Rmd/HTML setups -->
-<p><br />
-</p>
-<!-- 
-********************************************************************************
-SECTION BREAK / VISUAL SEPARATOR (commented out; no effect in output)
-********************************************************************************
--->
+<p><br></p>
 <!-- =============================================================================
-LEFT COLUMN (SIDEBAR)
-Contains: headshot, titles, contact info, links, popular writing, fun links
+LEFT COLUMN
 ============================================================================= -->
 <div class="column-left">
-<!-- Headshot image (relative path within site) -->
 <p><img src="images/headshot_website.jpg" style="width: 100%" alt="Clayton Adamson headshot"></p>
-<!-- Position / title line -->
 <p style="font-family: &#39;DM Mono&#39;; font-size: 16pt; color: Black; letter-spacing: 1.5px; line-height: 2.5; margin: 0; padding: 1;">
 <strong>Clayton Adamson</strong>
 </p>
-<!-- Small vertical spacer -->
 <div style="font-size: 2pt;">
 <br>
 </div>
-<!-- Position / title line -->
 <p style="font-family: &#39;DM Mono&#39;; font-size: 12pt; color: Black; letter-spacing: 1px; line-height: 2; margin: 0; padding: 1;">
 PhD Candidate in Sociology
 </p>
-<!-- Small vertical spacer -->
 <div style="font-size: 2pt;">
 <br>
 </div>
-<!-- Position / title line -->
 <p style="font-family: &#39;DM Mono&#39;; font-size: 12pt; color: Black; letter-spacing: 1px; line-height: 2; margin: 0; padding: 1;">
 Center for Demography and Ecology
 </p>
-<!-- Thin underline separator -->
 <p style="font-family: &#39;DM Mono&#39;; font-size: 12pt; color: Black; letter-spacing: 1px; border-bottom: .5pt solid; line-height: 2; margin: 0; padding: .5pt;">
 </p>
-<!-- Small vertical spacer -->
 <div style="font-size: 4pt;">
 <br>
 </div>
-<!-- <!-- Additional title line -->
-<!-- <p style="font-family: 'DM Mono'; font-size: 10pt; color: Black; letter-spacing: 1px; line-height: 1; margin: 0; padding: 0;"> Charles H. McIlwain University Preceptor </p> -->
-<!-- Small vertical spacer -->
-<div style="font-size: 4pt;">
-<br>
-</div>
-<!-- Institution label -->
 <p style="font-family: &#39;DM Mono&#39;; font-size: 12pt; color: Black; letter-spacing: 2px;">
 University of Wisconsin—Madison
 </p>
-<!-- Small vertical spacer -->
 <div style="font-size: 4pt;">
 <br>
 </div>
-<!-- Email with mild obfuscation to deter scraping -->
-<p style="font-family: &#39;DM Mono&#39;; font-size: 12pt; color: Black; font-size: 12pt; letter-spacing: 1px; color: #3C2F2F">
+<p style="font-family: &#39;DM Mono&#39;; font-size: 12pt; letter-spacing: 1px; color: #3C2F2F;">
 cadamson <em>[at]</em> wisc <em>[dot]</em> edu
 </p>
-<!-- Larger vertical spacer -->
 <div style="font-size: 10pt;">
 <br>
 </div>
-<!-- <!-- ========================= CONTACT ========================= -->
-<!-- <h2 style="border-bottom: .5pt solid; line-height: 2;">  Contact </h2> -->
-<!-- <!-- Email with mild obfuscation to deter scraping -->
-<!-- <p style="font-family: 'DM Mono'; font-size: 12pt; color: Black; font-size: 12pt; letter-spacing: 1px; color: #71716c"> samtrejo *[at]* princeton *[dot]* edu </p> -->
-<!-- <div style="font-size: 4pt;"> <br> </div> -->
-<!-- <!-- Phone number (wrapped with \( \) so parentheses render reliably in some markdown parsers) -->
-<!-- <p style="font-family: 'DM Mono'; font-size: 12pt; color: Black; font-size: 12pt; letter-spacing: 1px; color: #71716c">  \(609) 258-4436 </p> -->
-<!-- <div style="font-size: 4pt;"> <br> </div> -->
-<!-- <!-- Office address -->
-<!-- <p style="font-family: 'DM Mono'; font-size: 12pt; color: Black; font-size: 12pt; letter-spacing: 1px; color: #71716c"> 187 Wallace Hall <br> -->
-<!-- Princeton, NJ 08544 </p> -->
-<!-- <div style="font-size: 14pt;"> <br> </div> -->
-<!-- ========================= LINKS ========================= -->
 <h2 style="border-bottom: .5pt solid; line-height: 2;">
  Links
 </h2>
-<!-- CV -->
-<p><a href="CV_Adamson_26.06.02.pdf"><span
-style="font-size: 14pt; font-family: &#39;DM Mono&#39;; letter-spacing: 1px; color: #0B5394"><strong>Curriculum
-Vitae</strong></span></a></p>
-<!-- Google Scholar -->
-<p><a
-href="https://scholar.google.com/citations?user=4DMBuDkAAAAJ&amp;hl=en&amp;oi=sra"><span
-style="font-size: 14pt; font-family: &#39;DM Mono&#39;; font-weight: normal; letter-spacing: 1px; color: #1E6649">
-<strong>Google Scholar</strong> </span></a></p>
-<!-- <!-- Department page -->
-<!-- [<span style="font-size: 12pt; font-family: 'DM Mono'; font-weight: normal; letter-spacing: 1px; color: #71716c"> Princeton Sociology Department </span> -->
-<!-- ](https://sociology.princeton.edu/people/sam-trejo) -->
-<!-- <!-- Lab page -->
-<!-- [<span style="font-size: 12pt; font-family: 'DM Mono'; font-weight: normal; letter-spacing: 1px; color: #71716c"> Princeton Biosociology Lab </span> -->
-<!-- ](http://bio.sociology.princeton.edu/) -->
-<!-- <!-- Book page -->
-<!-- [<span style="font-size: 12pt; font-family: 'DM Mono'; font-weight: normal; letter-spacing: 1px; color: #71716c"> *What We Inherit* </span> -->
-<!-- ](https://press.princeton.edu/books/hardcover/9780691237756/what-we-inherit) -->
-<!-- <div style="font-size: 14pt;"> <br> </div> -->
-<!-- <!-- ========================= POPULAR WRITING ========================= -->
-<!-- <h2 style="border-bottom: .5pt solid; line-height: 2;">  Popular Writing </h2> -->
-<!-- <!-- LA Times -->
-<!-- [<span style="font-size: 12pt; font-family: 'DM Mono'; font-weight: normal; letter-spacing: 1px; color: #71716c"> Los Angeles Times </span> -->
-<!-- ](https://www.latimes.com/opinion/story/2020-01-19/kidney-transplants-donors-shortage) -->
-<!-- <!-- Scientific American -->
-<!-- [<span style="font-size: 12pt; font-family: 'DM Mono'; font-weight: normal; letter-spacing: 1px; color: #71716c"> Scientific American </span> -->
-<!-- ](https://www.scientificamerican.com/article/scientists-must-consider-the-risk-of-racist-misappropriation-of-research/) -->
-<!-- <!-- Live Science -->
-<!-- [<span style="font-size: 12pt; font-family: 'DM Mono'; font-weight: normal; letter-spacing: 1px; color: #71716c"> Live Science </span> -->
-<!-- ](https://www.livescience.com/health/genetics/new-tech-allows-parents-to-score-ivf-embryos-for-desirable-traits-and-its-in-desperate-need-of-regulation-opinion) -->
-<!-- <div style="font-size: 14pt;"> <br> </div> -->
-<!-- <!-- ========================= TEACHING ========================= -->
-<!-- <h2 style="border-bottom: .5pt solid; line-height: 2;">  Teaching </h2> -->
-<!-- <!-- Advanced Social Statistics -->
-<!-- [<span style="font-size: 12pt; font-family: 'DM Mono'; font-weight: normal; letter-spacing: 1px; color: #71716c"> Advanced Social Statistics </span> -->
-<!-- ](https://trejo.scholar.princeton.edu/sites/g/files/toruqf3186/files/documents/2026_01_princeton_soc504.pdf) -->
-<!-- <p style="font-family: 'DM Mono'; font-size: 8pt; color: #71716c; letter-spacing: 2.5px; line-height: 1; margin-top: 0.4em; margin-bottom: 1.75em;">[LECTURE SLIDES](https://trejo.scholar.princeton.edu/sites/g/files/toruqf3186/files/documents/2026_01_princeton_soc504.pdf)</p> -->
-<!-- <!-- Genomics & Society -->
-<!-- [<span style="font-size: 12pt; font-family: 'DM Mono'; font-weight: normal; letter-spacing: 1px; color: #71716c"> Genomics \& Society </span> -->
-<!-- ](https://trejo.scholar.princeton.edu/sites/g/files/toruqf3186/files/documents/2022_09_princeton_soc371.pdf) -->
-<!-- <!-- Sports, Recreation, & Society -->
-<!-- [<span style="font-size: 12pt; font-family: 'DM Mono'; font-weight: normal; letter-spacing: 1px; color: #71716c"> Sports, Recreation, \& Society </span> -->
-<!-- ](https://trejo.scholar.princeton.edu/sites/g/files/toruqf3186/files/documents/2026_01_princeton_soc362.pdf) -->
-<!-- <!-- Biodemography -->
-<!-- [<span style="font-size: 12pt; font-family: 'DM Mono'; font-weight: normal; letter-spacing: 1px; color: #71716c"> Biodemography </span> -->
-<!-- ](https://trejo.scholar.princeton.edu/sites/g/files/toruqf3186/files/documents/2021_01_wisconsin_soc901.pdf) -->
-<!-- <!-- Disovering What Works in Health Policy -->
-<!-- [<span style="font-size: 12pt; font-family: 'DM Mono'; font-weight: normal; letter-spacing: 1px; color: #71716c"> What Works in Health Policy? </span> -->
-<!-- ](https://trejo.scholar.princeton.edu/sites/g/files/toruqf3186/files/documents/2021_01_wisconsin_pa281.pdf) -->
-<!-- <!-- Causal Inference in Educational \& Social Research -->
-<!-- [<span style="font-size: 12pt; font-family: 'DM Mono'; font-weight: normal; letter-spacing: 1px; color: #71716c"> Applied Causal Inference </span> -->
-<!-- ](https://trejo.scholar.princeton.edu/sites/g/files/toruqf3186/files/documents/2020_01_stanford_educ430b.pdf) -->
-<!-- <div style="font-size: 14pt;"> <br> </div> -->
-<!-- <!-- ========================= FUN ========================= -->
-<!-- <h2 style="border-bottom: .5pt solid; line-height: 2;">  Fun </h2> -->
-<!-- <!-- NYT Magazine piece -->
-<!-- [<span style="font-size: 12pt; font-family: 'DM Mono'; font-weight: normal; letter-spacing: 1px; color: #71716c"> Judge John Hodgman I</span> -->
-<!-- ](https://www.nytimes.com/2021/11/24/magazine/covid-love-story-sockgate.html) -->
-<!-- <!-- NYT interactive -->
-<!-- [<span style="font-size: 12pt; font-family: 'DM Mono'; font-weight: normal; letter-spacing: 1px; color: #71716c"> Judge John Hodgman II</span> -->
-<!-- ](https://www.nytimes.com/interactive/2025/05/20/magazine/11mag-hodgmanquiz.html) -->
-<!-- 
-********************************************************************************
-SECTION BREAK / VISUAL SEPARATOR (commented out; no effect in output)
-********************************************************************************
--->
+<p>
+<a href="CV_Adamson_26.06.02.pdf" style="font-size: 14pt; font-family: 'DM Mono'; letter-spacing: 1px; color: #0B5394;"><strong>Curriculum
+Vitae</strong></a>
+</p>
+<p>
+<a href="https://scholar.google.com/citations?user=4DMBuDkAAAAJ&hl=en&oi=sra"
+style="font-size: 14pt; font-family: 'DM Mono'; letter-spacing: 1px; color: #1E6649;">
+<strong>Google Scholar</strong> </a>
+</p>
 </div>
 <!-- =============================================================================
-CENTER COLUMN (SPACER)
-Empty by design; creates horizontal whitespace between sidebar and main content
+CENTER SPACER
 ============================================================================= -->
 <div class="column-center">
 
 </div>
 <!-- =============================================================================
-RIGHT COLUMN (MAIN CONTENT)
-Contains: Biography + Research listings
+RIGHT COLUMN
 ============================================================================= -->
 <div class="column-right">
-<div id="about" class="section level1">
-<h1>About</h1>
-<!-- Thick underline divider beneath the section header -->
+<h1>
+About
+</h1>
 <p style="font-size: 10pt; letter-spacing: 1px; border-bottom: 1.5pt solid; line-height: 2; margin: 0; padding: .5pt;">
 </p>
-<div style="font-size: 14pt;">
+<div style="font-size: 4pt;">
 <br>
 </div>
-<!-- Body tag used to set line height for the biography text block -->
-<body style="line-height: 1.4;">
-<!-- Bio paragraph 1 -->
+<div style="line-height: 1.4;">
 <p style="text-align: justify;">
 My name is Clayton Adamson and I am a PhD Candidate in Sociology at the
 University of Wisconsin–Madison. Previously, I obtained a M.S. in
@@ -465,33 +364,24 @@ Regional Science from Cornell University. My research interests include
 place, social stratification, demography, economic development, and
 family sociology.
 </p>
-<!-- Bio paragraph 2 -->
-<!-- <p style="text-align: justify;"> -->
-<!-- My research agenda follows two themes: -->
-<!-- How place and geography shape stratification within the US.  -->
-<!-- This first stream includes work on how emplaced economic structures limit resident prosperity, how geographic origins shape returns to migration, and how broad shifts in the American family vary spatially. -->
-<!-- How noneconomic family characteristics shape intergenerational persistence. This second stream investigates how parental attributes such as occupational job quality and alcohol abuse intersect with and transcend traditional determinants of child status attainment. -->
-<!-- </p> -->
 <p style="text-align: justify;">
 My research agenda follows two themes:
 </p>
 <ol style="margin-left: 1.2em; text-align: justify;">
 <li>
-<strong style="color:#black;">How place and geography shape
-stratification within the US.</strong> This first stream includes work
-on how emplaced economic structures limit resident prosperity, how
-geographic origins shape returns to migration, and how broad temporal
-shifts in the American family vary spatially.
+<strong>How place and geography shape stratification within the
+US.</strong> This first stream includes work on how emplaced economic
+structures limit resident prosperity, how geographic origins shape
+returns to migration, and how broad temporal shifts in the American
+family vary spatially.
 </li>
 <li>
-<strong style="color:#black;">How noneconomic family characteristics
-shape intergenerational persistence.</strong> This second stream
-investigates how parental attributes such as occupational job quality
-and alcohol abuse intersect with and transcend traditional determinants
-of child status attainment.
+<strong>How noneconomic family characteristics shape intergenerational
+persistence.</strong> This second stream investigates how parental
+attributes such as occupational job quality and alcohol abuse intersect
+with and transcend traditional determinants of child status attainment.
 </li>
 </ol>
-<!-- Bio paragraph 3 (book announcement + links) -->
 <p style="text-align: justify;">
 I regularly use various advanced methodological approaches, including:
 spatial econometrics, machine learning, Bayesian approaches, network
@@ -502,183 +392,147 @@ with equivalent data in the UK. My research has been published in
 journals such as <strong><em>Social Science Research</em>, <em>Social
 Networks</em>, and <em>Spatial Demography</em></strong>.
 </p>
-<!-- Bio paragraph 4 (personal + repo link) -->
 <p style="text-align: justify;">
 Prior to academia, I worked as a director of economic modeling and
 research manager in economic development organizations and think-tank
 settings. Beyond research, I spend my time running, hiking, and cycling,
 reading classic literature, listening to blues-rock and alt-country
 music, and rooting for the Brewers, Packers, and Badgers.
-</body>
-<!-- 
-********************************************************************************
-SECTION BREAK / VISUAL SEPARATOR (commented out; no effect in output)
-********************************************************************************
--->
-<!-- Large vertical spacer before Research section -->
-<div style="font-size: 10px;">
-<br>
-</div>
-</div>
-<div id="research" class="section level1">
-<h1>Research</h1>
-<!-- Underline divider beneath Research header -->
-<p style="font-size: 12pt; letter-spacing: 1px; border-bottom: 1.5pt solid; line-height: 2; margin: 0; padding: .5pt;">
 </p>
-<!-- Legend explaining icons/colors used in publication list -->
-<!-- <span> -->
-<!--   <b style="font-size: 9pt; font-family: 'DM Mono'; color: #71716c; float: right"> &nbsp; * Joint lead authorship &nbsp; § Senior authorship </b>  -->
-<!--   <b style="font-size: 15pt; color:#49AEEE; float: left"> ● </b> -->
-<!--   <b style="font-size: 15pt; font-family: 'DM Mono'; float: left"> PDF &nbsp; </b> -->
-<!--   <b style="font-size: 15pt; color:#0BA868; float: left"> ● </b> -->
-<!--   <b style="font-size: 15pt; font-family: 'DM Mono'; float: left"> FAQ &nbsp; </b> -->
-<!--   <b style="font-size: 15pt; color:#8754FC; float: left"> ● </b> -->
-<!--   <b style="font-size: 15pt; font-family: 'DM Mono'; float: left"> Data/Code &nbsp; </b> -->
-<!--   <b style="font-size: 15pt; color:#F05A24; float: left"> ● </b> -->
-<!--   <b style="font-size: 15pt; font-family: 'DM Mono'; float: left"> Pre-Reg </b> -->
-<!-- </span> -->
-<!-- <br> -->
-<div style="font-size: 15px;">
+</div>
+<div style="font-size: 1px;">
 <br>
 </div>
-<!-- ========================= PUBLISHED & FORTHCOMING ========================= -->
-<div id="published-forthcoming-papers" class="section level2">
-<h2>● Published &amp; Forthcoming Papers</h2>
+<h1>
+Research
+</h1>
+<p style="font-size: 12pt; letter-spacing: 1px; border-bottom: 1.5pt solid; line-height: 1; margin: 0; padding: .5pt;">
+</p>
+<div style="height: 6px;">
+
+</div>
+<h2>
+● Published &amp; Forthcoming Papers
+</h2>
 <p style="font-size: 11pt; letter-spacing: 1px; border-bottom: .5pt solid; color: #3C2F2F; line-height: 2; margin: 0; padding: .5pt;">
 </p>
-<div style="font-size: 8pt;">
+<div style="height: 4px;">
+
+</div>
+<h3>
+2026
+</h3>
+<div style="height: 4px;">
+
+</div>
+<h4>
+The Intergenerational Mobility Advantage of Educators’ Children: Capital
+Embedded in Occupations
+</h4>
+<p>
+<strong>Clayton Adamson</strong> and Karl Vachuska.<br> <em>Social
+Science Research</em>
+</p>
+<div style="height: 4px;">
+
+</div>
+<h4>
+Neighborhood Shocks and Network Dynamics: An Instrumental Variable
+Approach to Measuring Triadic Closure in Daily Mobility Networks
+</h4>
+<p>
+Karl Vachuska and <strong>Clayton Adamson</strong>.<br> <em>Social
+Networks</em>
+</p>
+<div style="font-size: 2pt;">
 <br>
 </div>
-<!-- ========================= YEAR: 2026 ========================= -->
-<div id="section" class="section level3">
-<h3>2026</h3>
-<div style="font-size: 8pt;">
-<br>
+<h3>
+2025
+</h3>
+<div style="height: 2px;">
+
 </div>
-<div
-id="the-intergenerational-mobility-advantage-of-educators-children-capital-embedded-in-occupations"
-class="section level4">
-<h4>The Intergenerational Mobility Advantage of Educators’ Children:
-Capital Embedded in Occupations</h4>
-<p><strong>Clayton Adamson</strong> and Karl Vachuska. <em>Social
-Science Research</em></p>
-<div style="font-size: 9pt;">
-<br>
+<h4>
+<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12068858/">Economic
+Complexity and Divergent Population Growth by Race and Rurality</a>
+</h4>
+<p>
+<strong>Clayton Adamson</strong>, Katherine J. Curtis, and Sara
+Peters.<br> <em>Spatial Demography</em>
+</p>
+<div style="height: 6px;">
+
 </div>
-</div>
-<div
-id="neighborhood-shocks-and-network-dynamics-an-instrumental-variable-approach-to-measuring-triadic-closure-in-daily-mobility-networks"
-class="section level4">
-<h4>Neighborhood Shocks and Network Dynamics: An Instrumental Variable
-Approach to Measuring Triadic Closure in Daily Mobility Networks</h4>
-<p>Karl Vachuska and <strong>Clayton Adamson</strong>. <em>Social
-Networks</em></p>
-<div style="font-size: 9pt;">
-<br>
-</div>
-<div style="font-size: 10px;">
-<br>
-</div>
-<!-- ========================= YEAR: 2025 ========================= -->
-</div>
-</div>
-<div id="section-1" class="section level3">
-<h3>2025</h3>
-<div style="font-size: 8pt;">
-<br>
-</div>
-<div
-id="economic-complexity-and-divergent-population-growth-by-race-and-rurality"
-class="section level4">
-<h4><a
-href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12068858/">Economic
-Complexity and Divergent Population Growth by Race and Rurality</a></h4>
-<p><strong>Clayton Adamson</strong>, Katherine J. Curtis, and Sara
-Peters. <em>Spatial Demography</em>.</p>
-<div style="font-size: 30px;">
-<br>
-</div>
-<!-- ========================= WORKING PAPERS ========================= -->
-</div>
-</div>
-</div>
-<div id="under-review" class="section level2">
-<h2>○ Under Review</h2>
+<h2>
+○ Under Review
+</h2>
 <p style="font-size: 12pt; letter-spacing: 1px; border-bottom: .5pt solid; color: #3C2F2F; line-height: 2; margin: 0; padding: .5pt;">
 </p>
-<div style="font-size: 8pt;">
-<br>
+<div style="height: 4px;">
+
 </div>
-<div
-id="uneven-jobs-uneven-places-industrial-structure-and-the-geography-of-job-quality"
-class="section level4">
-<h4>Uneven Jobs, Uneven Places: Industrial Structure and the Geography
-of Job Quality</h4>
-<p><strong>Clayton Adamson</strong>. Revise and resubmit at
-<em>Population Research and Policy Review</em>.</p>
-<div style="font-size: 8pt;">
-<br>
+<h4>
+Uneven Jobs, Uneven Places: Industrial Structure and the Geography of
+Job Quality
+</h4>
+<p>
+<strong>Clayton Adamson</strong>.<br> Revise and resubmit at
+<em>Population Research and Policy Review</em>.
+</p>
+<div style="height: 4px;">
+
 </div>
+<h4>
+Growth Without Gain: The Adverse Effects of State and Local Development
+Incentives on Resident Prosperity
+</h4>
+<p>
+<strong>Clayton Adamson</strong>. <br> Revise and resubmit at <em>Urban
+Affairs Review</em>.
+</p>
+<div style="height: 4px;">
+
 </div>
-<div
-id="growth-without-gain-the-adverse-effects-of-state-and-local-development-incentives-on-resident-prosperity"
-class="section level4">
-<h4>Growth Without Gain: The Adverse Effects of State and Local
-Development Incentives on Resident Prosperity</h4>
-<p><strong>Clayton Adamson</strong>. Revise and resubmit at <em>Urban
-Affairs Review</em>.</p>
-<div style="font-size: 8pt;">
-<br>
+<h4>
+Unequal Returns to Growth and Decline Across U.S. Regions and Social
+Classes
+</h4>
+<p>
+<strong>Clayton Adamson</strong>. <br> Revise and resubmit at
+<em>Cambridge Journal of Regions, Economy, and Society</em>.
+</p>
+<div style="height: 4px;">
+
 </div>
+<h4>
+Housing Costs and US Fertility: A New Era
+</h4>
+<p>
+Nicholas D.E. Mark, <strong>Clayton Adamson</strong>, and Max Besbris.
+<br> Under review.
+</p>
+<div style="height: 4px;">
+
 </div>
-<div
-id="unequal-returns-to-growth-and-decline-across-u.s.-regions-and-social-classes"
-class="section level4">
-<h4>Unequal Returns to Growth and Decline Across U.S. Regions and Social
-Classes</h4>
-<p><strong>Clayton Adamson</strong>. Revise and resubmit at
-<em>Cambridge Journal of Regions, Economy, and Society</em>.</p>
-<div style="font-size: 8pt;">
-<br>
+<h4>
+Neighborhoods, Homicide, and Racial Inequality in Life Expectancy: The
+Impact of Residence and Routine Mobility
+</h4>
+<p>
+Karl Vachuska, <strong>Clayton Adamson</strong>, Brian Levy, and Max
+Besbris. <br> Under review.
+</p>
+<p><br><br><br><br><br><br><br><br></p>
 </div>
-</div>
-<div id="housing-costs-and-us-fertility-a-new-era"
-class="section level4">
-<h4>Housing Costs and US Fertility: A New Era</h4>
-<p>Nicholas D.E. Mark, <strong>Clayton Adamson</strong>, and Max
-Besbris. Under review.</p>
-<div style="font-size: 8pt;">
-<br>
-</div>
-</div>
-<div
-id="neighborhoods-homicide-and-racial-inequality-in-life-expectancy-the-impact-of-residence-and-routine-mobility"
-class="section level4">
-<h4>Neighborhoods, Homicide, and Racial Inequality in Life Expectancy:
-The Impact of Residence and Routine Mobility</h4>
-<p>Karl Vachuska, <strong>Clayton Adamson</strong>, Brian Levy, and Max
-Besbris. Under review.</p>
-<!-- Bottom padding / whitespace at end of right column -->
-<br> <br> <br> <br> <br> <br> <br> <br>
-</div>
-<!-- =============================================================================
-CLEAR FLOATS SO FOOTER SITS BELOW COLUMNS
-============================================================================= -->
 <div style="clear: both;">
 
 </div>
-<!-- =============================================================================
-FOOTER
-- Uses inline R code to print the current year dynamically
-============================================================================= -->
 <footer class="full-width-footer">
 <p>
 © 2026 Clayton Adamson. All rights reserved.
 </p>
 </footer>
-</div>
-</div>
-</div>
 </div>
 
 
