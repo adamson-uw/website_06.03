@@ -83,18 +83,18 @@ a:link {
 
 /* visited link */
 a:visited {
-  color: #535983;
+  color: #45818e;
 }
 
 /* mouse over link */
 a:hover {
-  color: #535983;
+  color: #cae4e8;
   text-decoration: underline;
 }
 
 /* selected link */
 a:active {
-  color: #535983;
+  color: #cae4e8;
 }
 
 .navbar-default {
@@ -147,12 +147,12 @@ body{
   background-color: #white;
   color: #191919;
   margin: auto;
-  max-width: 1425px
+  max-width: 1225px
 }
 
 body .main-container {
-  max-width: 1425px;
-  width: 1425px;
+  max-width: 1225px;
+  width: 1225px;
 }
 
 span {
