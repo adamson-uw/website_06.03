@@ -168,59 +168,62 @@ span b {
   font-weight: 500;
 }
 
-/* Turn the CURRICULUM VITAE tab into a blue button */
-.navbar-inverse .navbar-nav > li > a[href$="CV_Adamson_26.06.02.pdf"],
-.navbar-default .navbar-nav > li > a[href$="CV_Adamson_26.06.02.pdf"] {
-  background-color: #45818e !important;   /* blue button */
-  color: white !important;                /* white text */
-  border-radius: 6px;
-  padding: 6px 14px !important;
-  font-weight: 600;
-  letter-spacing: 1px;
-  margin-top: 16px;
+/* Tight, clean navbar */
+.navbar,
+.navbar-default,
+.navbar-inverse {
+  min-height: 38px !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
 }
 
-/* Hover state */
-.navbar-inverse .navbar-nav > li > a[href$="CV_Adamson_26.06.02.pdf"]:hover,
-.navbar-default .navbar-nav > li > a[href$="CV_Adamson_26.06.02.pdf"]:hover {
-  background-color: #cae4e8 !important;   /* darker blue */
-  color: white !important;
-}
-
-/* Keep brand and CV on one line, remove weird underline/spacing */
+/* Brand (CLAYTON ADAMSON) */
 .navbar-default .navbar-brand {
   font-family: 'DM Mono', monospace;
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 2px;
   text-transform: uppercase;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin: 0;
-  border: none;
-  text-decoration: none;
+  padding: 4px 0 !important;
+  margin: 0 !important;
+  line-height: 30px !important;
+  border: none !important;
+  text-decoration: none !important;
 }
 
-/* Remove any underline/border from the brand */
-.navbar-default .navbar-brand,
+/* Remove underline from brand */
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
-  text-decoration: none;
-  border: none;
-  box-shadow: none;
+  text-decoration: none !important;
+  border: none !important;
+  box-shadow: none !important;
 }
 
-/* CV tab styling + keep it on same line */
-.navbar-default .navbar-nav > li > a {
-  white-space: nowrap;          /* prevents wrapping to next line */
-  padding-top: 10px;
-  padding-bottom: 10px;
+/* CV button */
+.navbar-default .navbar-nav > li > a[href$="CV_Adamson_26.06.02.pdf"],
+.navbar-inverse .navbar-nav > li > a[href$="CV_Adamson_26.06.02.pdf"] {
+  background-color: #45818e !important;
+  color: white !important;
+  border-radius: 6px;
+  padding: 4px 12px !important;
+  margin-top: 4px !important;
+  margin-bottom: 4px !important;
+  font-weight: 600;
+  letter-spacing: 1px;
+  white-space: nowrap;
 }
 
-/* Optional: make the CV look like a button */
+/* CV hover */
+.navbar-default .navbar-nav > li > a[href$="CV_Adamson_26.06.02.pdf"]:hover,
+.navbar-inverse .navbar-nav > li > a[href$="CV_Adamson_26.06.02.pdf"]:hover {
+  background-color: #cae4e8 !important;
+  color: white !important;
+}
+
+/* Tighten all navbar links */
 .navbar-default .navbar-nav > li > a {
-  border-radius: 4px;
-  padding-left: 14px;
-  padding-right: 14px;
+  padding: 4px 10px !important;
+  line-height: 30px !important;
+  white-space: nowrap;
 }
 
