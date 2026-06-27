@@ -5,7 +5,7 @@ navbar:
   title: "<h5> CLAYTON ADAMSON </h5>"
   right:
     - text: "CURRICULUM VITAE"
-      href: "CV_Adamson_26.06.02.pdf"
+      href: "CV_Adamson_working.pdf"
 
 output:
   html_document:

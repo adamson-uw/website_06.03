@@ -203,8 +203,8 @@ span b {
 }
 
 /* CV button */
-.navbar-default .navbar-nav > li > a[href$="CV_Adamson_26.06.02.pdf"],
-.navbar-inverse .navbar-nav > li > a[href$="CV_Adamson_26.06.02.pdf"] {
+.navbar-default .navbar-nav > li > a[href$="CV_Adamson_working.pdf"],
+.navbar-inverse .navbar-nav > li > a[href$="CV_Adamson_working.pdf"] {
   background-color: #45818e !important;
   color: white !important;
   border-radius: 6px;
@@ -217,8 +217,8 @@ span b {
 }
 
 /* CV hover */
-.navbar-default .navbar-nav > li > a[href$="CV_Adamson_26.06.02.pdf"]:hover,
-.navbar-inverse .navbar-nav > li > a[href$="CV_Adamson_26.06.02.pdf"]:hover {
+.navbar-default .navbar-nav > li > a[href$="CV_Adamson_working.pdf"]:hover,
+.navbar-inverse .navbar-nav > li > a[href$="CV_Adamson_working.pdf"]:hover {
   background-color: #cae4e8 !important;
   color: white !important;
 }

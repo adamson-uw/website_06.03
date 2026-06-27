@@ -82,7 +82,7 @@ University of Wisconsin—Madison
 <h2 style="border-bottom: .5pt solid; line-height: 2;"> Links</h2>
 
 <p>
-<a href="CV_Adamson_26.06.02.pdf" style="font-size: 14pt; font-family: 'DM Mono'; letter-spacing: 1px; color: #0B5394;"><strong>Curriculum Vitae</strong></a>
+<a href="CV_Adamson_working.pdf" style="font-size: 14pt; font-family: 'DM Mono'; letter-spacing: 1px; color: #0B5394;"><strong>Curriculum Vitae</strong></a>
 </p>
 
 <p>
