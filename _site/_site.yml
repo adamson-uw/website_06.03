@@ -1,0 +1,15 @@
+title: "Clayton Adamson"
+name: "website"
+
+navbar:
+  title: "<h5> CLAYTON ADAMSON </h5>"
+  right:
+    - text: "CURRICULUM VITAE"
+      href: "CV_Adamson_26.09.30.pdf"
+
+output:
+  html_document:
+    css: styles.css
+    theme: paper
+    includes:
+      in_header: header.html
