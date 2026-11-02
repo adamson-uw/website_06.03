@@ -82,7 +82,7 @@ University of Wisconsin—Madison
 <h2 style="border-bottom: .5pt solid; line-height: 2;"> Links</h2>
 
 <p>
-<a href="CV_Adamson_26.09.30.pdf" style="font-size: 14pt; font-family: 'DM Mono'; letter-spacing: 1px; color: #0B5394;"><strong>Curriculum Vitae</strong></a>
+<a href="CV_Adamson_working.pdf" style="font-size: 14pt; font-family: 'DM Mono'; letter-spacing: 1px; color: #0B5394;"><strong>Curriculum Vitae</strong></a>
 </p>
 
 <p>
@@ -133,7 +133,7 @@ My research agenda follows two themes:
 </ol>
 
 <p style="text-align: justify;">
-I regularly use various advanced methodological approaches, including: spatial econometrics, machine learning, Bayesian approaches, network science, and non-linear spline and growth models. The majority of my work relies upon U.S. public survey and administrative data and longitudinal data from the Panel Study of Income Dynamics (PSID), along with equivalent data in the UK. My research has been published in journals such as <strong><em>Social Science Research</em>, <em>Social Networks</em>, <em>Cambridge Journal of Regions, Economy, and Society</em>, and <em>Spatial Demography</em></strong>.
+I regularly use various advanced methodological approaches, including: spatial econometrics, machine learning, Bayesian approaches, network science, and non-linear spline and growth models. The majority of my work relies upon U.S. public survey and administrative data and longitudinal data from the Panel Study of Income Dynamics (PSID), along with equivalent data in the UK. My research has been published in journals such as <strong><em>Social Science Research</em>, <em>Social Networks</em>, <em>Urban Affairs Review</em>, <em>Cambridge Journal of Regions, Economy, and Society</em>, and <em>Spatial Demography</em></strong>.
 </p>
 
 <p style="text-align: justify;">
@@ -160,12 +160,18 @@ Prior to academia, I worked as a director of economic modeling and research mana
 
 <div style="height: 4px;"></div>
 
+<h4><a href="https://osf.io/kf986/files/hpfxc">Growth Without Gain: The Adverse Effects of State and Local Development Incentives on Resident Prosperity</a></h4>
+<p><strong>Clayton Adamson</strong>. <br>
+Forthcoming at <em>Urban Affairs Review</em>.</p>
+
+
+<div style="height: 4px;"></div>
+
 <h4><a href="https://academic.oup.com/cjres/advance-article-abstract/doi/10.1093/cjres/rsag031/8776640?redirectedFrom=fulltext">Unequal Returns to Growth and Decline Across U.S. Regions and Social Classes</a></h4>
 <p><strong>Clayton Adamson</strong>. <br>
 <em>Cambridge Journal of Regions, Economy, and Society</em>.</p>
 
 <div style="height: 4px;"></div>
-
 
 <h4><a href="https://www.sciencedirect.com/science/article/abs/pii/S0049089X26000815">The Intergenerational Mobility Advantage of Educators’ Children: Capital Embedded in Occupations</a></h4>
 <p><strong>Clayton Adamson</strong> and Karl Vachuska.<br>
@@ -198,12 +204,6 @@ Prior to academia, I worked as a director of economic modeling and research mana
 <h4>Uneven Jobs, Uneven Places: Industrial Structure and the Geography of Job Quality</h4>
 <p><strong>Clayton Adamson</strong>.<br> 
 Conditional acceptance at <em>Population Research and Policy Review</em>.</p>
-
-<div style="height: 4px;"></div>
-
-<h4>Growth Without Gain: The Adverse Effects of State and Local Development Incentives on Resident Prosperity</h4>
-<p><strong>Clayton Adamson</strong>. <br>
-Revise and resubmit at <em>Urban Affairs Review</em>.</p>
 
 <div style="height: 4px;"></div>
 
